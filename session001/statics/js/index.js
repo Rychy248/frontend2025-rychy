@@ -16,7 +16,7 @@ function concatenacionExtension() {
   // concatena con + y con balstik
 }
 
-function getTheTime() {
+function obtenerElTiempo() {
   // Piensa en 90 como la media de edad de un humano
   /*
     365 days in a year
