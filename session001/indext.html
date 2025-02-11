@@ -50,13 +50,19 @@
       
       <script>
         function hazLaResta() {
+          let minuendo = document.getElementById("minuendo").innerHTML
+          let sustraendo = document.getElementById("sustraendo").innerHTML
 
+          let resultado = Number(minuendo) - Number(sustraendo)
+
+          let restaResultado = document.getElementById("resta-resultado")
+          restaResultado.innerHTML = resultado
         }
       </script>
 
       <p>
-        <button type="button" onclick="hazLaSuma()">Realiza la resta</button>
-        <span id="minuendo">5</span> + <span id="sustraendo">2</span> = <span id="resta-resultado">result</span>
+        <button type="button" onclick="hazLaResta()">Realiza la resta</button>
+        <span id="minuendo">15</span> - <span id="sustraendo">2</span> = <span id="resta-resultado">result</span>
       </p>
     </div>
 
