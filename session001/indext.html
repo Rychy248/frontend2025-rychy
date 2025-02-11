@@ -77,7 +77,7 @@
           <input type="text" name="resultado" id="resultado" disabled="true">
         </div>
         <div class="container-flex">
-          <button type="button" >Suma (+)</button>
+          <button type="button" onclick="suma()">Suma (+)</button>
           <button type="button" >Resta (-)</button>
           <button type="button" >Multiplicacion (*)</button>
           <button type="button" >Modulo Operador (%)</button>
@@ -85,7 +85,14 @@
         </div>
       </div>
       <script>
-        function suma() { }
+        function suma() {
+          let numero1 = Number(document.getElementById("numero1").value)
+          let numero2 = Number(document.getElementById("numero2").value)
+
+          let resultadoOperacion = numero1 + numero2;
+          let resultadoNodo = document.getElementById("resultado")
+          resultadoNodo.value = resultadoOperacion
+         }
         function resta() { }
         function multiplicacion() { }
         function division() { }
