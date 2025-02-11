@@ -17,25 +17,50 @@
 
   <section id="middle">
     <div class="container-insade">
-      <button type="button"><a href="#">Excercices!</a></button>
-      <button type="button"><a href="#">Concepts</a></button>
-      <button type="button"><a href="#">Short programs!</a></button>
+      <button type="button"><a href="#">Excercicios!</a></button>
+      <button type="button"><a href="#">Conceptos</a></button>
+      <button type="button"><a href="#">Programas Cortos!</a></button>
     </div>
   </section>
 
   <div class="container-insade">
     <h1>Usando Alertas y variables</h1>
+
     <div class="container-insade">
+      
       <script>
-        function hazLaSuma(params) {
+        function hazLaSuma() {
+          let sumando1 = document.getElementById("sumando1").innerHTML
+          let sumando2 = document.getElementById("sumando2").innerHTML
+          let resultado = Number(sumando1) + Number(sumando2)
           
+          let resultadoDom = document.getElementById("suma-resultado")
+          resultadoDom.innerHTML = resultado
         }
       </script>
+
       <p>
-        <button type="button">Realiza la suma</button>
+        <button type="button" onclick="hazLaSuma()">Realiza la suma</button>
         <span id="sumando1">1</span> + <span id="sumando2">2</span> = <span id="suma-resultado">result</span>
       </p>
     </div>
+
+
+    <div class="container-insade">
+      
+      <script>
+        function hazLaResta() {
+
+        }
+      </script>
+
+      <p>
+        <button type="button" onclick="hazLaSuma()">Realiza la resta</button>
+        <span id="minuendo">5</span> + <span id="sustraendo">2</span> = <span id="resta-resultado">result</span>
+      </p>
+    </div>
+
+
   </div>
 
 </body>
