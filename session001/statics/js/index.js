@@ -18,12 +18,21 @@ function concatenacionExtension() {
 
 function obtenerElTiempo() {
   // Piensa en 90 como la media de edad de un humano
+  const edad = Number(
+    document.getElementById("edadHumano").value
+  );
+  const edadRestante = 90 - edad 
+  let dias, meses, semanas;
   /*
     365 days in a year
     52 weeks in a year
     12 months in a year.
     */
-  // humantext.innerHTML = "Tu tienes <b>" + x + " dias</b>, <b>" + y + " semanas</b>, and <b>" + z +  " meses</b> todavía.";
+  dias = edadRestante * 365
+  semanas = edadRestante * 52
+  meses = edadRestante * 12
+  let textoHumano = document.getElementById("textoHumano")
+  textoHumano.innerHTML = "Tu tienes <b>" + x + " dias</b>, <b>" + y + " semanas</b>, and <b>" + z +  " meses</b> todavía.";
 }
 
 function calcularIBM() {
