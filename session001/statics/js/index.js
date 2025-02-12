@@ -32,7 +32,10 @@ function obtenerElTiempo() {
   semanas = edadRestante * 52
   meses = edadRestante * 12
   let textoHumano = document.getElementById("textoHumano")
-  textoHumano.innerHTML = "Tu tienes <b>" + x + " dias</b>, <b>" + y + " semanas</b>, and <b>" + z +  " meses</b> todavía.";
+  
+  // textoHumano.innerHTML = "Tu tienes <b>" + dias + "</b> dias, <b>" + semanas + "</b> semanas, y <b>" + meses +  "</b> meses todavía.";
+  textoHumano.innerHTML = `Tu tienes <b>${dias}</b> dias, <b>${semanas}</b> semanas, y <b>${meses}</b> meses todavía.`;
+
 }
 
 function calcularIBM() {
