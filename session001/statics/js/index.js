@@ -43,24 +43,26 @@ function calcularIBM() {
   let tipoPeso = document.getElementById("peso").value;
   let tipoAltura = document.getElementById("altura").value;
 
-  let peso = Number(document.getElementById("pesoHumana"))
-  let altura = Number(document.getElementById("alturaHumana"))
+  let peso = Number(document.getElementById("pesoHumano").value)
+  let altura = Number(document.getElementById("alturaHumana").value)
   // obtenen los valores de peso y altura de los inputs
 
   if (tipoPeso === "lbrs") {
     peso = peso / 2.20462;
-    // peso /=  2.20462
   }
   
-
   // usa la formula
   // BMI = (weight / heigth ^ 2)
-  // let BMI = weight /  height ** 2;
-  let texto = ""
+  let BMI = peso /  altura ** 2;
+  let texto = `BMI = ${BMI}`
   // evalua
-  // if BMI > 24.9 = Y tienes sobrepeso";
-  // if BMI < 24.9 && BMI >=18.5 = Tienes un peso normal";
-  // if BMI under 18.5 = Estas por debajo del peson normal"
+  if(BMI > 24.9 ){
+    texto += ` Tines sobrepeso :(.`;
+  }else if(BMI < 24.9 && BMI >=18.5 ){
+    texto = texto + ` Tienes un peso normal :).`;
+  }else{
+    texto += ` Estas por debajo del peso normal`;
+  }
 
   // asigna a resultadoIBM
   document.getElementById("resultadoIBM").innerHTML = texto
