@@ -28,3 +28,14 @@ function randomColor() {
 
     return color;
 };
+
+function cambioTitulo(color){
+    let contenedor = document.getElementById('DOM-BOX');
+
+    if(color){
+        contenedor.firstElementChild.style.color = randomColor()
+    }else{
+        contenedor.firstElementChild.innerHTML = 'Hola fui modificado'
+    }
+}
+
