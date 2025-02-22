@@ -39,3 +39,28 @@ function cambioTitulo(color){
     }
 }
 
+function selecionarTodosLosInputs() {
+    
+    let checkboxes = document.querySelectorAll("input[type=checkbox")
+
+    checkboxes.forEach(
+        (check) => check.click()
+    )
+}
+
+
+function mangoAKiwi() {
+    let node =  document.querySelector('#DOM-BOX ul').lastElementChild
+
+    if (node.innerHTML === 'Kiwi'){
+        node.innerHTML = 'Mango'
+    }else{
+        node.innerHTML = 'Kiwi'
+    }
+
+    node.innerHTML = node.innerHTML === 'Kiwi' 
+        ? 'Mango' 
+        : 'Kiwi'
+    ;
+    
+}
