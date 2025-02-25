@@ -49,3 +49,21 @@ function solicitarDPI() {
     // .then
     // .catch
 }
+
+
+function comprarMacdonals(efectivo) {
+    
+    // si tiene más de 65
+    // si tiene 65, "Tenga su mackdonals"
+    // si tiene menos de 65, "Lo siento no le alcanza para la hamburguesa"
+
+}
+
+function cargaEfectivo(){
+
+    // preguntar, cuanto efectivo tiene
+    
+    // llamar la promesa y ver si se logra comprar una mack
+    // el mensaje o respuesta se imprime en un alert
+
+}
