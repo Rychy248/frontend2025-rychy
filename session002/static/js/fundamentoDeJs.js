@@ -96,4 +96,22 @@ function cargaEfectivo(){
 }
 
 
+function quienEsUser1(){
+    // https://jsonplaceholder.typicode.com/users/1
+    fetch('https://jsonplaceholder.typicode.com/users/1')
+    .then(response => {
+        console.log("HOLA ESTE ES EL RESPONSE");
+        console.log(response);
+        return response.json()
+    })
+    .then(data => {
+        console.log("HOLA, SOY LA SEGUNDA PROMESA, QUE PARSE LA DATA")
+        console.log(data)
+    })
+    .catch(error =>{
+        console.error("HOLA ESTE FUE EL ERROR");
+        console.error(error);
+    })
+}
+
 
